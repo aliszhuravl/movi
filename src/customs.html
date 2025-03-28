@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    //= html/_head.html
+    <title>Template</title>
+</head>
+<body>
+<div class="page-container page-main page-customs">
+    //= html/_header.html
+    <main class="page">
+        <div class="hero hero_customs">
+            <div class="hero__inner">
+                <div class="hero_left">
+                    <ul class="bc"><li><a href="index.html" class="link link_white"><span>Главная</span></a></li> <li><span class="tuda"></span></li> <li><p><span>Перевозки по РФ</span></p></li> </ul>
+
+                    <h1>Услуги таможенного брокера в Москве</h1>
+                </div>
+                <div class="hero_right">
+                    <div class="form">
+                        <p class="form_top">Оставьте заявку, и мы перезвоним вам в течение 5 минут</p>
+                        <div class="input_container">
+                            <input type="text" class="form__item" placeholder="Ваше имя">
+                            <input type="tel" class="form__item" placeholder="Телефон *">
+                        </div>
+                        <p class="agreement">Нажимая кнопку «Рассчитать» вы даете согласие на обработку персональных данных</p>
+                        <button class="btn btn_white">Заказать звонок</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero_sub">
+                <div class="hero_sub_box">
+                    <a class="hero_sub__item" href="#">
+                        <p>Импорт и экспорт</p>
+                    </a>
+                    <a class="hero_sub__item" href="#">
+                        <p>Подготовка документов</p>
+                    </a>
+                    <a class="hero_sub__item" href="#">
+                        <p>Таможенные процедуры</p>
+                    </a>
+                    <a class="hero_sub__item" href="#">
+                        <p>Электронное декларирование</p>
+                    </a>
+                    <a class="hero_sub__item" href="#">
+                        <p>Экономия на оформлении</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="page__inner">
+
+            <section class="page__item section_white">
+                <div class="section_header">
+                    <h2>Узнать стоимость таможенного оформления и доставки</h2>
+                </div>
+                <div class="customs_calc">
+                    <div class="labels_box">
+                        <label class="inline-label form__checkbox text_checkbox check">
+                            <input class="form__checkbox_hidden" type="radio" name="checkbox-1">
+                            <span class="form__checkbox_indicator"></span>
+                            <span class="form__checkbox_text">Импорт</span>
+                        </label>
+                        <label class="inline-label form__checkbox text_checkbox">
+                            <input class="form__checkbox_hidden" type="radio" name="checkbox-1">
+                            <span class="form__checkbox_indicator"></span>
+                            <span class="form__checkbox_text">Экспорт</span>
+                        </label>
+                        <label class="inline-label form__checkbox text_checkbox">
+                            <input class="form__checkbox_hidden" type="radio" name="checkbox-1">
+                            <span class="form__checkbox_indicator"></span>
+                            <span class="form__checkbox_text">Иное</span>
+                        </label>
+                    </div>
+                    <div class="backform__inner cust_inner">
+                        <div class="bf_box cust_bf">
+                            <p class="bf_title">Данные для таможни</p>
+                            <div class="bf_inputs cust_items">
+                                <input type="text" class="form__item" placeholder="ТН ВЭД (таможенный код)">
+                                <label class="inline-label form__checkbox check mobile">
+                                    <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1" checked="checked">
+                                    <span class="form__checkbox_indicator"></span>
+                                    <span class="form__checkbox_text">Я не знаю ТН ВЭД</span>
+                                </label>
+                                <input type="text" class="form__item item_cost" placeholder="Стоимость товара">
+                                <div class="filter_item value">
+                                    <div class="dropdown">
+                                        <div class="dropdown__text">USD</div>
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__item">USD</li>
+                                            <li class="dropdown__item">EUR</li>
+                                            <li class="dropdown__item">РУБ</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="#" class="link link_und">Добавить категорию</a>
+                                <div class="checkbox_box">
+                                    <label class="inline-label form__checkbox check">
+                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1" checked="checked">
+                                        <span class="form__checkbox_indicator"></span>
+                                        <span class="form__checkbox_text">Логистика не нужна</span>
+                                    </label>
+                                </div>
+                            </div>
+                                <label class="inline-label form__checkbox desktop check">
+                                    <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1" checked="checked">
+                                    <span class="form__checkbox_indicator"></span>
+                                    <span class="form__checkbox_text">Я не знаю ТН ВЭД</span>
+                                </label>
+                        </div>
+                        <div class="bf_box cust_bf">
+                            <p class="bf_title">Данные груза</p>
+                            <div class="bf_inputs cust_items">
+                                <input type="text" class="form__item input_from" placeholder="Адрес загрузки">
+                                <input type="text" class="form__item input_to" placeholder="Адрес разгрузки">
+                                <div class="filter_item">
+                                    <div class="dropdown">
+                                        <div class="dropdown__text">Самолет</div>
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__item">Самолет</li>
+                                            <li class="dropdown__item">Поезд</li>
+                                            <li class="dropdown__item">Сухогруз</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <input type="text" class="form__item" placeholder="Масса брутто, кг">
+                                <input type="text" class="form__item" placeholder="Объём, м3">
+                            </div>
+                        </div>
+                        <button class="btn">Рассчитать стоимость</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__item section_transparent min-padding">
+                <div class="section_header">
+                    <h2>Об услуге</h2>
+                </div>
+                <div class="section_solotext">
+                    <div class="text">
+                        <p>Основная сложность связана с конструкцией комбайна. Жатка — механизм для уборки урожая — чаще всего имеет довольно большие габариты, до 7 м. Как правило, это жатки для зерновых. В этом случае для перевозки её придётся отсоединить от комбайна, установить вдоль трала и погрузочной площадки или везти отдельной машиной.</p>
+                    </div>
+                </div>
+                <div class="simple_list">
+                    <ul class="blue_list">
+                        <li><span class="point"></span><p>Энергетики</p></li>
+                        <li><span class="point"></span><p>Нефтегазовый сектор</p></li>
+                        <li><span class="point"></span><p>Химическое производство</p></li>
+                        <li><span class="point"></span><p>Нефтехимические заводы</p></li>
+                        <li><span class="point"></span><p>Нефтеперерабатывающие заводы</p></li>
+                        <li><span class="point"></span><p>Промышленное строительство</p></li>
+                        <li><span class="point"></span><p>Машиностроение</p></li>
+                        <li><span class="point"></span><p>Атомная отрасль</p></li>
+                        <li><span class="point"></span><p>Легкая промышленность</p></li>
+                        <li><span class="point"></span><p>Склады и терминалы</p></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="page__item section_transparent section_nopading">
+                <div class="white_tile four-elements">
+                    <div class="white_tile__item">
+                        <img src="img/search.svg" alt="">
+                        <p>Заявка или звонок</p>
+                    </div>
+                    <div class="white_tile__item">
+                        <img src="img/calcul.svg" alt="">
+                        <p>Расчет стоимости</p>
+                    </div>
+                    <div class="white_tile__item">
+                        <img src="img/podpis.svg" alt="">
+                        <p>Заключение договора</p>
+                    </div>
+                    <div class="white_tile__item">
+                        <img src="img/done.svg" alt="">
+                        <p>Заявка или звонок</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__item section_white">
+                <div class="section_header">
+                    <h2>Услуги таможенного брокера</h2>
+                </div>
+                <div class="section_solotext">
+                    <div class="text">
+                        <p>Основная сложность связана с конструкцией комбайна. Жатка — механизм для уборки урожая — чаще всего имеет довольно большие габариты, до 7 м. Как правило, это жатки для зерновых. В этом случае для перевозки её придётся отсоединить от комбайна, установить вдоль трала и погрузочной площадки или везти отдельной машиной.</p>
+                    </div>
+                </div>
+                <div class="simple_list">
+                    <ul class="blue_list not-last one-col">
+                        <li><span class="point"></span><p>Анализ и подготовка товаросопроводительных и транспортных документов</p></li>
+                        <li><span class="point"></span><p>Подготовка и ведение документооборота по таможенному оформлению</p></li>
+                        <li><span class="point"></span><p>Расчет и корректировка всех платежей для конкретной партии товара</p></li>
+                        <li><span class="point"></span><p>Подготовка декларации в электронном формате</p></li>
+                        <li><span class="point"></span><p>Предоставление сведений о состоянии декларирования</p></li>
+                        <li><span class="point"></span><p>ПКонтроль отправки партии со склада временного хранения после выпуска</p></li>
+                        <li><span class="point"></span><p>Передача полного пакета сопроводительных документов (декларации, бухгалтерских и транспортных накладных)</p></li>
+                    </ul>
+                </div>
+                <div class="section_solotext">
+                    <div class="text">
+                        <p>Основная сложность связана с конструкцией комбайна. Жатка — механизм для уборки урожая — чаще всего имеет довольно большие габариты, до 7 м. Как правило, это жатки для зерновых. В этом случае для перевозки её придётся отсоединить от комбайна, установить вдоль трала и погрузочной площадки или везти отдельной машиной.</p>
+                    </div>
+                </div>
+                <div class="blue-lined">
+                    <p>Основная сложность связана с конструкцией комбайна. Жатка — механизм для уборки урожая — чаще всего имеет довольно большие габариты, до 7 м. Как правило, это жатки для зерновых.</p>
+                </div>
+                <div class="section_solotext">
+                    <div class="text">
+                        <p>Основная сложность связана с конструкцией комбайна. Жатка — механизм для уборки урожая — чаще всего имеет довольно большие габариты, до 7 м. Как правило, это жатки для зерновых. В этом случае для перевозки её придётся отсоединить от комбайна, установить вдоль трала и погрузочной площадки или везти отдельной машиной.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__item section_transparent">
+                <div class="section_header">
+                    <h2>О компании</h2>
+                </div>
+                <div class="about_box">
+                    <div class="about_box__left">
+                        <div class="video_box">
+                            <video width="100%" height="auto" controls="controls" preload="true" poster="img/vid.jpg">
+                                <source src="img/video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="about_box__right">
+                        <p>Основная сложность связана с конструкцией комбайна. Жатка — механизм для уборки урожая — чаще всего имеет довольно большие габариты, до 7 м. Как правило, это жатки для зерновых. В этом случае для перевозки её придётся отсоединить от комбайна, установить вдоль трала и погрузочной площадки или везти отдельной машиной.</p>
+                        <p>Перевозка комбайна с жаткой возможна для некоторых моделей картофелеуборочных или свеклоуборочных комбайнов, у которых габариты не выходят за допустимые пределы ширины автопоезда.</p>
+                        <a href="#" class="btn">Заказать услугу</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__item section_white">
+                <div class="section_header senza_border">
+                    <h2>Тарифы по таможенному оформлению</h2>
+                </div>
+                <div class="tabs tabs-cards tabs_cases">
+                    <ul class="tabs__buttons">
+                        <li class="tabs__btn tabs__btn_active">Импорт</li>
+                        <li class="tabs__btn">Экспорт</li>
+                        <li class="tabs__btn">Дополнительные услуги</li>
+                    </ul>
+
+                    <div class="tabs__content">
+                        <div class="tabs__item tabs__item_active">
+                            <div class="section_tabtext">
+                                <div class="pricelist__container">
+                                    <div class="pricelist__container_row">
+                                        <div class="pcr_item">
+                                            <p class="medium">Вид транспортного средства</p>
+                                        </div>
+                                        <div class="pcr_item">
+                                            <p class="medium">Базовая стоимость (без НДС)</p>
+                                        </div>
+                                        <div class="pcr_item">
+                                            <p class="medium">Стоимость доп. листа (без НДС)</p>
+                                        </div>
+                                    </div>
+                                    <div class="pricelist__container_row">
+                                        <div class="pcr_item">
+                                            <p>Авто, включая услуги СВХ</p>
+                                        </div>
+                                        <div class="pcr_item">
+                                            <p>от 11000 руб</p>
+                                        </div>
+                                        <div class="pcr_item">
+                                            <p>от 11000 руб</p>
+                                        </div>
+                                    </div>
+                                    <div class="pricelist__container_row">
+                                        <div class="pcr_item">
+                                            <p>Авто, включая услуги СВХ</p>
+                                        </div>
+                                        <div class="pcr_item">
+                                            <p>от 11000 руб</p>
+                                        </div>
+                                        <div class="pcr_item">
+                                            <p>от 11000 руб</p>
+                                        </div>
+                                    </div>
+                                    <div class="pricelist__container_row">
+                                        <div class="pcr_item">
+                                            <p>Авиа, не включая услуги СВХ (Домодедово, Шереметьево, Внуково, Пулково)</p>
+                                        </div>
+                                        <div class="pcr_item">
+                                            <p>от 11000 руб</p>
+                                        </div>
+                                        <div class="pcr_item">
+                                            <p>от 11000 руб</p>
+                                        </div>
+                                    </div>
+                                    <div class="pricelist__container_row">
+                                        <div class="pcr_item">
+                                            <p>Авто, включая услуги СВХ</p>
+                                        </div>
+                                        <div class="pcr_item">
+                                            <p>от 11000 руб</p>
+                                        </div>
+                                        <div class="pcr_item">
+                                            <p>от 11000 руб</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__item">
+                            инфо
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__item section_transparent section_only-tile">
+
+                <div class="section_header senza_border">
+                    <h2>Необходимые документы</h2>
+                </div>
+
+                <div class="white_tile four-elements">
+                    <div class="white_tile__item">
+                        <img src="img/search.svg" alt="">
+                        <p>Заявка или звонок</p>
+                    </div>
+                    <div class="white_tile__item">
+                        <img src="img/calcul.svg" alt="">
+                        <p>Расчет стоимости</p>
+                    </div>
+                    <div class="white_tile__item">
+                        <img src="img/podpis.svg" alt="">
+                        <p>Заключение договора</p>
+                    </div>
+                    <div class="white_tile__item">
+                        <img src="img/done.svg" alt="">
+                        <p>Заявка или звонок</p>
+                    </div>
+                </div>
+            </section>
+
+            //= html/_form.html
+
+            <section class="page__item section_transparent section_only-tile">
+
+                <div class="section_header senza_border">
+                    <h2>Этапы сотрудничества</h2>
+                </div>
+
+                <div class="white_tile">
+                    <div class="white_tile__item">
+                        <img src="img/phone.svg" alt="">
+                        <p>Заявка или звонок</p>
+                    </div>
+                    <div class="white_tile__item">
+                        <img src="img/calc.svg" alt="">
+                        <p>Расчет стоимости</p>
+                    </div>
+                    <div class="white_tile__item">
+                        <img src="img/deal.svg" alt="">
+                        <p>Заключение договора</p>
+                    </div>
+                    <div class="white_tile__item">
+                        <img src="img/docs.svg" alt="">
+                        <p>Подготовка сопроводительных документов</p>
+                    </div>
+                    <div class="white_tile__item">
+                        <img src="img/deliv.svg" alt="">
+                        <p>Поехали!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__item section_white">
+                <div class="section_header">
+                    <h2>Наши преимущества</h2>
+                </div>
+                <div class="section_solotext">
+                    <div class="text">
+                        <p class="point_text"><span class="point"></span>Преимущества сотрудничества с нами</p>
+                        <p class="text_light">Основная сложность связана с конструкцией комбайна. Жатка — механизм для уборки урожая — чаще всего имеет довольно большие габариты, до 7 м. Как правило, это жатки для зерновых. В этом случае для перевозки её придётся отсоединить от комбайна, установить вдоль трала и погрузочной площадки или везти отдельной машиной.</p>
+                    </div>
+                </div>
+                <div class="tile advant_tile">
+                    <div class="advant_tile__item">
+                        <img src="img/check.svg" alt="">
+                        <div class="at_text">
+                            <p>Разрабатываем уникальные решения</p>
+                            <p>индивидуально под каждого клиента</p>
+                        </div>
+                    </div>
+                    <div class="advant_tile__item">
+                        <img src="img/check.svg" alt="">
+                        <div class="at_text">
+                            <p>Поддерживаем клиентов</p>
+                            <p>в процессе выполнения заказа  24/7</p>
+                        </div>
+                    </div>
+                    <div class="advant_tile__item">
+                        <img src="img/check.svg" alt="">
+                        <div class="at_text">
+                            <p>Отвечаем за сохранность грузов</p>
+                            <p>на всем протяжении маршрута</p>
+                        </div>
+                    </div>
+                    <div class="advant_tile__item">
+                        <img src="img/check.svg" alt="">
+                        <div class="at_text">
+                            <p>Составляем многозадачные алгоритмы доставки</p>
+                            <p>любой сложности</p>
+                        </div>
+                    </div>
+                    <div class="advant_tile__item">
+                        <img src="img/check.svg" alt="">
+                        <div class="at_text">
+                            <p>Применяем экспресс-доставку пакета документов</p>
+                            <p>для клиента в любую точку мира</p>
+                        </div>
+                    </div>
+                    <div class="advant_tile__item">
+                        <img src="img/check.svg" alt="">
+                        <div class="at_text">
+                            <p>Сопровождаем каждую перевозку разработкой проекта</p>
+                            <p>инженерами-экспертами</p>
+                        </div>
+                    </div>
+                    <div class="advant_tile__item">
+                        <img src="img/check.svg" alt="">
+                        <div class="at_text">
+                            <p>Организуем срочную подачу транспорта</p>
+                            <p>день в день</p>
+                        </div>
+                    </div>
+                    <div class="advant_tile__item">
+                        <img src="img/check.svg" alt="">
+                        <div class="at_text">
+                            <p>Круглосуточная система мониторинга</p>
+                            <p>транспортного средства и груза</p>
+                        </div>
+                    </div>
+                    <div class="advant_tile__item">
+                        <img src="img/check.svg" alt="">
+                        <div class="at_text">
+                            <p>Контроль качества на каждом этапе</p>
+                            <p>руководством компании</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="page__item section_transparent">
+                <div class="section_header">
+                    <h2>Что входит в брокерские услуги</h2>
+                </div>
+                <div class="section_solotext">
+                    <div class="text">
+                        <p class="text_light">Основная сложность связана с конструкцией комбайна. Жатка — механизм для уборки урожая — чаще всего имеет довольно большие габариты, до 7 м. Как правило, это жатки для зерновых. В этом случае для перевозки её придётся отсоединить от комбайна, установить вдоль трала и погрузочной площадки или везти отдельной машиной.</p>
+                    </div>
+                </div>
+                <div class="tile advant_tile simple_advant_tile">
+                    <div class="advant_tile__item">
+                        <img src="img/check.svg" alt="">
+                        <div class="at_text">
+                            <p>Подготовка и оформление таможенных документов
+                                и декларирование товара</p>
+                        </div>
+                    </div>
+                    <div class="advant_tile__item">
+                        <img src="img/check.svg" alt="">
+                        <div class="at_text">
+                            <p>Курьерские услуги, связанные с отправкой документов</p>
+                        </div>
+                    </div>
+                    <div class="advant_tile__item">
+                        <img src="img/check.svg" alt="">
+                        <div class="at_text">
+                            <p>Определение и корректировка таможенной стоимости</p>
+                        </div>
+                    </div>
+                    <div class="advant_tile__item">
+                        <img src="img/check.svg" alt="">
+                        <div class="at_text">
+                            <p>Пользование складом таможенного терминала</p>
+                        </div>
+                    </div>
+                    <div class="advant_tile__item">
+                        <img src="img/check.svg" alt="">
+                        <div class="at_text">
+                            <p>Расчет и оплата таможенных платежей</p>
+                        </div>
+                    </div>
+                    <div class="advant_tile__item">
+                        <img src="img/check.svg" alt="">
+                        <div class="at_text">
+                            <p>Классификация грузов по ТН ВЭД</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="page__item section_transparent">
+                <div class="section_header">
+                    <h2>Официальные документы и разрешения</h2>
+                </div>
+                <div class="section_solotext not-last">
+                    <div class="text">
+                        <p class="text_light">Основная сложность связана с конструкцией комбайна. Жатка — механизм для уборки урожая — чаще всего имеет довольно большие габариты, до 7 м. Как правило, это жатки для зерновых. В этом случае для перевозки её придётся отсоединить от комбайна, установить вдоль трала и погрузочной площадки или везти отдельной машиной.</p>
+                    </div>
+                </div>
+
+                <div class="partner_slider bp_slider">
+                    <div class="partner_slider__slide">
+                        <img src="img/bp.jpg" alt="">
+                    </div>
+                    <div class="partner_slider__slide">
+                        <img src="img/bp.jpg" alt="">
+                    </div>
+                    <div class="partner_slider__slide">
+                        <img src="img/bp.jpg" alt="">
+                    </div>
+                    <div class="partner_slider__slide">
+                        <img src="img/bp.jpg" alt="">
+                    </div>
+                    <div class="partner_slider__slide">
+                        <img src="img/bp.jpg" alt="">
+                    </div>
+                    <div class="partner_slider__slide">
+                        <img src="img/bp.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__item section_transparent">
+                <div class="section_header senza_border">
+                    <h2>Кейсы</h2>
+                    <a href="#" class="link">Перейти ко всем</a>
+                </div>
+                <div class="tile_projects">
+                    <div class="tile_projects__item">
+                        <div class="tp_img">
+                            <img src="img/case.jpg" alt="">
+                            <a href="case.html" class="btn btn_white">Подробнее</a>
+                        </div>
+                        <div class="tp_info">
+                            <div class="tp_info_tags">
+                                <p>Перевозка по РФ</p>
+                                <p>ВЭД</p>
+                            </div>
+                            <div class="tp_info_name">
+                                <p>Трубопровод на катушках 75 шт.</p>
+                            </div>
+                            <div class="tp_info_size">
+                                <div class="size">
+                                    <p class="mini">Габариты</p>
+                                    <p>12000 х 3000 х 3000</p>
+                                </div>
+                                <div class="size">
+                                    <p class="mini">Вес</p>
+                                    <p>27000 кг</p>
+                                </div>
+                            </div>
+                            <div class="tp_info_size place">
+                                <div class="size">
+                                    <p class="mini">Откуда</p>
+                                    <p>Находка, боец Кузнецова</p>
+                                </div>
+                                <div class="size">
+                                    <p class="mini">Куда</p>
+                                    <p>п. Яблоновский, Адыгея</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tile_projects__item">
+                        <div class="tp_img">
+                            <img src="img/case.jpg" alt="">
+                            <a href="case.html" class="btn btn_white">Подробнее</a>
+                        </div>
+                        <div class="tp_info">
+                            <div class="tp_info_tags">
+                                <p>Перевозка по РФ</p>
+                                <p>ВЭД</p>
+                            </div>
+                            <div class="tp_info_name">
+                                <p>Трубопровод на катушках 75 шт.</p>
+                            </div>
+                            <div class="tp_info_size">
+                                <div class="size">
+                                    <p class="mini">Габариты</p>
+                                    <p>12000 х 3000 х 3000</p>
+                                </div>
+                                <div class="size">
+                                    <p class="mini">Вес</p>
+                                    <p>27000 кг</p>
+                                </div>
+                            </div>
+                            <div class="tp_info_size place">
+                                <div class="size">
+                                    <p class="mini">Откуда</p>
+                                    <p>Находка, боец Кузнецова</p>
+                                </div>
+                                <div class="size">
+                                    <p class="mini">Куда</p>
+                                    <p>п. Яблоновский, Адыгея</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tile_projects__item">
+                        <div class="tp_img">
+                            <img src="img/case.jpg" alt="">
+                            <a href="case.html" class="btn btn_white">Подробнее</a>
+                        </div>
+                        <div class="tp_info">
+                            <div class="tp_info_tags">
+                                <p>Перевозка по РФ</p>
+                                <p>ВЭД</p>
+                            </div>
+                            <div class="tp_info_name">
+                                <p>Трубопровод на катушках 75 шт.</p>
+                            </div>
+                            <div class="tp_info_size">
+                                <div class="size">
+                                    <p class="mini">Габариты</p>
+                                    <p>12000 х 3000 х 3000</p>
+                                </div>
+                                <div class="size">
+                                    <p class="mini">Вес</p>
+                                    <p>27000 кг</p>
+                                </div>
+                            </div>
+                            <div class="tp_info_size place">
+                                <div class="size">
+                                    <p class="mini">Откуда</p>
+                                    <p>Находка, боец Кузнецова</p>
+                                </div>
+                                <div class="size">
+                                    <p class="mini">Куда</p>
+                                    <p>п. Яблоновский, Адыгея</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="mobile mobile_btn">
+                <a href="cases.html" class="btn">Перейти ко всем</a>
+            </div>
+
+            <section class="page__item section_transparent section_only-tile">
+
+                <div class="section_header senza_border">
+                    <h2>Наши гарантии</h2>
+                </div>
+
+                <div class="white_tile four-elements">
+                    <div class="white_tile__item">
+                        <img src="img/search.svg" alt="">
+                        <p>Заявка или звонок</p>
+                    </div>
+                    <div class="white_tile__item">
+                        <img src="img/calcul.svg" alt="">
+                        <p>Расчет стоимости</p>
+                    </div>
+                    <div class="white_tile__item">
+                        <img src="img/podpis.svg" alt="">
+                        <p>Заключение договора</p>
+                    </div>
+                    <div class="white_tile__item">
+                        <img src="img/done.svg" alt="">
+                        <p>Заявка или звонок</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    //= html/_footer.html
+    //= html/_menu.html
+    //= html/_search-box.html
+</div>
+//= html/_scripts.html
+</body>
+</html>

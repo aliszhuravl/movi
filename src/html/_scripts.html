@@ -1,0 +1,71 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery/jquery-3.1.1.min.js"><\/script>')</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="js/libs/jquery.modal/jquery.modal.min.js"></script>
+<script src="js/libs/jquery.slick/slick.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript">
+    ymaps.ready(init);
+
+    function init() {
+        var myMap = new ymaps.Map("map", {
+                center: [61.766245, 34.313515],
+                zoom: 5
+            }),
+
+            // Создаем геообъект с типом геометрии "Точка".
+            myGeoObject = new ymaps.GeoObject({
+                // Описание геометрии.
+                geometry: {
+                    type: "Point",
+                    coordinates: [61.766245, 34.313515]
+                },
+                // Свойства.
+                properties: {
+                    // Контент метки.
+                    iconContent: '',
+                    balloonContent: 'Березовая Аллея, 24'
+                }
+            }, {
+                // Опции.
+                // Иконка метки будет растягиваться под размер ее содержимого.
+                preset: 'twirl#redStretchyIcon',
+                // Метку можно перемещать.
+                draggable: true
+            }),
+
+            // Создаем метку с помощью вспомогательного класса.
+            myPlacemark1 = new ymaps.Placemark([61.766245, 34.313515], {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                iconContent: '1',
+                balloonContent: 'Балун',
+                hintContent: 'Стандартный значок метки'
+            }, {
+                // Опции.
+                // Стандартная фиолетовая иконка.
+                preset: 'twirl#violetIcon'
+            }),
+
+            myPlacemark2 = new ymaps.Placemark([62.08, 35.21], {
+                // Свойства.
+                hintContent: 'березовая Аллея, 24'
+            }, {
+                // Опции.
+                // Своё изображение иконки метки.
+                iconImageHref: '../img/map.png',
+                // Размеры метки.
+                iconImageSize: [50, 70],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [0, 0]
+            });
+
+        //myMap.controls.add('smallZoomControl');
+        // Добавляем все метки на карту.
+        myMap.geoObjects.add(myPlacemark1)
+            .add(myPlacemark2)
+            .add(myGeoObject);
+    }
+</script>
+<script src="js/main.js"></script>

@@ -1,0 +1,103 @@
+.hero {
+  width: 100%;
+  background-image: url('../img/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 700px;
+  height: 90vh;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  &__inner {
+    @extend .page__inner;
+    @extend .layout-padding;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 32px;
+      .hero_left {
+        color: #fff;
+          .video {
+            margin-bottom: 20px;
+          }
+      }
+      .hero_right {
+        .form {
+          width: 320px;
+          background-color: $color-blue;
+          padding: 20px;
+          border-radius: 16px;
+            .form_top {
+              color: #fff;
+              font-size: 16px;
+              padding-bottom: 12px;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+              margin-bottom: 20px;
+            }
+            .input_container {
+
+            }
+            .agreement {
+              font-size: 11px;
+              line-height: 13px;
+              margin-bottom: 16px;
+              color: #fff;
+              opacity: 0.5;
+            }
+            .btn {
+              width: 100%;
+            }
+        }
+      }
+  }
+}
+
+.subheading {
+  font-size: 20px;
+  font-family: $font-family_medium;
+  opacity: 0.7;
+}
+
+.hero_sub {
+  width: 100%;
+  padding: 60px 0;
+    &_box {
+      @extend .page__inner;
+      @extend .layout-padding;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+        .hero_sub__item {
+          p {
+            font-family: $font-family_medium;
+            line-height: 20px;
+          }
+          color: #fff;
+          border-left: 2px solid #fff;
+          text-decoration:none;
+          padding-left: 16px;
+          font-size: 16px;
+          margin-right: 32px;
+            &:last-child {
+              margin-right: 0;
+            }
+            &:hover {
+              border-color: $color-blue;
+            }
+        }
+    }
+}
+
+.hero_simple {
+  .hero__inner {
+    padding-bottom: 90px;
+  }
+}

@@ -1,0 +1,116 @@
+.btn {
+  position: relative;
+  vertical-align: top;
+  height: 48px;
+  padding: 5px 20px;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $color-blue;
+  background-color: $color-blue;
+  color: #fff;
+  font-family: $font-family_semibold;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: none;
+  width: fit-content;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+    text-decoration: none;
+  }
+  
+  &:hover,
+  &:focus {
+    border-color: #156FC2;
+    background-color: #156FC2;
+  }
+  
+  &:active {
+    background-color: darken($color-blue, 5%);
+  }
+}
+
+.btn_disabled {
+  border-color: $color-gray-40;
+  background-color: $color-gray-10;
+  color: $color-gray-60;
+  cursor: default;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $color-gray-40;
+    background-color: $color-gray-10;
+    color: $color-gray-60;
+  }
+}
+
+.btn_transparent {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.btn_white {
+  background-color: #fff;
+  border-color: #fff;
+  color: $color-black;
+  transition: all 0.2s;
+    &:hover {
+      transition: all 0.2s;
+    }
+}
+
+
+.btn_simple {
+  background-color: #fff;
+  border-color: $color-blue;
+  color: $color-blue;
+}
+
+.btn_light {
+  background-color: #EEF6FD;
+  border-color: #EEF6FD;
+  padding: 5px 16px;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: #E1EDF8;
+      border-color: #E1EDF8;
+    }
+}
+
+
+.btn_upload {
+  font-family: $font-family_medium;
+  color: $color-blue;
+  position: relative;
+  padding-left: 40px;
+  &:after {
+    position: absolute;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: '+';
+    font-size: 24px;
+    line-height: 18px;
+    text-align: center;
+    font-family: $font-family;
+    background-color: #DDECFB;
+    border-radius: 50%;
+    top: -6px;
+  }
+}

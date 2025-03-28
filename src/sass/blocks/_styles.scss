@@ -1,0 +1,77 @@
+//some styles
+
+.bc {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 20px;
+  font-family: $font-family;
+    .link span {
+      font-family: $font-family;
+      opacity: 1 !important;
+    }
+    p span {
+      opacity: 0.5;
+    }
+}
+
+.tuda {
+  width: 6px;
+  height: 6px;
+  content: '';
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+  transform: rotate(45deg);
+  display: block;
+  margin: 0 10px;
+}
+
+.btns_box {
+  margin-top: 12px;
+  &__container {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    .btn:first-child {
+      margin-right: 20px;
+    }
+  }
+}
+
+.search_window {
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  padding: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: all 0.3s;
+    &_top {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      p {
+        font-size: 20px;
+        font-family: $font-family_semibold;
+      }
+    }
+    .search_container {
+      margin-bottom: 0;
+    }
+}
+
+.sw_opened {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s;
+}

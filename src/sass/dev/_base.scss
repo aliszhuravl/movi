@@ -1,0 +1,75 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: #F4F5F7;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font: $font-normal 14px/1.5 $font-family;
+  font-weight: normal;
+  line-height: normal;
+  background-color: #F4F5F7;
+  font-style: normal;
+  color: $font-color_dark;
+}
+
+a {
+  transition: color, .2s;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 48px;
+  line-height: normal;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-family: $font-family_bold;
+  letter-spacing: 1px;
+}
+
+h2 {
+  margin-top: 0;
+  font-weight: normal;
+  font-family: $font-family_bold;
+  font-size: 36px;
+  line-height: normal;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: normal;
+  font-family: $font-family_bold;
+}
+
+.text_light {
+  opacity: 0.8;
+}
+
+.section_nopading {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  padding-top: 0 !important;
+}
+
+.pb_none {
+  padding-bottom: 0;
+}
+
+.desktop {
+  display: block;
+}

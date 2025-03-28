@@ -1,0 +1,78 @@
+.backform__inner {
+  width: 100%;
+  .bf_box {
+    width: 100%;
+    .bf_title {
+      font-size: 20px;
+      font-family: $font-family_medium;
+      margin-bottom: 16px;
+    }
+    .bf_inputs {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+        .form__item {
+          margin-right: 20px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+    }
+    &__container {
+      width: 100%;
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+        .left {
+          float: none;
+          width: 50%;
+          margin-right: 32px;
+          .form__textarea {
+            height: max-content;
+          }
+        }
+        .right {
+          width: 50%;
+            .docs_box {
+              display: flex;
+              align-items: flex-start;
+              justify-content: flex-start;
+              flex-wrap: wrap;
+              margin-bottom: 12px;
+            }
+            .btn_upload {
+              margin-bottom: 24px;
+            }
+          .btn_box {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .agreement {
+              margin-right: 20px;
+              font-size: 11px;
+              line-height: 13px;
+              margin-bottom: 16px;
+              opacity: 0.5;
+              text-align: right;
+            }
+          }
+
+        }
+    }
+  }
+}
+
+.file {
+  display: flex;
+  align-items: center;
+  background-color: #F4F5F7;
+  border-radius: 8px;
+  padding: 6px 12px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  img {
+    margin-right: 8px;
+    display: block;
+  }
+}

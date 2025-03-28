@@ -1,0 +1,110 @@
+.calc_container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+    &__box {
+      width: 33.33333%;
+      margin-right: 40px;
+      margin-top: 12px;
+        .cc_title {
+          font-size: 20px;
+          font-family: $font-family_medium;
+          margin-bottom: 16px;
+        }
+        .cc_content {
+          width: 100%;
+          margin-bottom: 16px;
+          .input_name {
+            font-size: 13px;
+            margin-bottom: 8px;
+              .measure {
+                opacity: 0.6;
+              }
+              .chosen {
+                font-size: 13px;
+                color: $color-blue;
+                font-family: $font-family_semibold;
+                opacity: 1;
+              }
+          }
+          .form__item {
+            margin-bottom: 6px;
+          }
+        }
+      .agreement {
+        font-size: 11px;
+        line-height: 13px;
+        margin-bottom: 16px;
+        opacity: 0.5;
+        text-align: right;
+      }
+      &:last-child {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .cc_title {
+          width: 100%;
+          text-align: left;
+        }
+      }
+    }
+}
+
+.range_steps {
+  padding: 6px 0 0 0;
+  &__line {
+    background-color: #DDECFB;
+    width: 100%;
+    content: '';
+    height: 10px;
+    border-radius: 8px;
+    position: relative;
+  }
+  &__line_active {
+    @extend .range_steps__line;
+    background-color: $color-blue;
+    width: 10%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .range_btn {
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    content: '';
+    border: 2px solid $color-blue;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8%;
+  }
+  .line_steps {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    span {
+      position: relative;
+      padding-top: 9px;
+      font-family: $font-family;
+      font-size: 13px;
+      opacity: 0.7;
+      &:before {
+        position: absolute;
+        height: 6px;
+        width: 2px;
+        content: '';
+        background-color: $color-blue;
+        top: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+  }
+}
