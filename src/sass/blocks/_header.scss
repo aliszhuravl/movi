@@ -45,14 +45,42 @@
         &:first-child {
           margin-right: 20px;
         }
-        &:last-child {
-          margin-left: 12px;
-          margin-right: 0;
-          font-size: 12px;
-          opacity: 0.6;
-          text-decoration: underline;
-          font-family: $font-family;
+      }
+      .link_mini {
+        margin-left: 12px;
+        margin-right: 0;
+        opacity: 0.6;
+        text-decoration: underline;
+        font-family: $font-family;
+      }
+      .social {
+        display: flex;
+        margin: 0 0 0 20px;
+        &_link {
+          text-decoration: none;
+          margin-right: 14px;
+            span:before {
+              font-size: 16px;
+              color: #fff;
+            }
+          &:last-child {
+            margin-right: 0;
+            span:before {
+              color: #fff;
+            }
+          }
+          &:hover {
+            span:before {
+              opacity: 0.7;
+            }
+          }
         }
+        .wechat {
+          span:before {
+            font-size: 17px;
+          }
+        }
+
       }
     }
     .search {

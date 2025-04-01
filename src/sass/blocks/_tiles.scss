@@ -106,16 +106,6 @@
             height: 100%;
             transition: all 0.2s;
           }
-        &:hover {
-          img {
-            opacity: 0.7;
-            transition: all 0.2s;
-          }
-          .btn_white {
-            opacity: 1;
-            transition: all 0.2s;
-          }
-        }
       }
       .tp_info {
         width: 100%;
@@ -124,22 +114,29 @@
           display: flex;
           flex-wrap: wrap;
           margin-bottom: 12px;
-            p {
+            a {
               text-transform: uppercase;
               font-size: 12px;
-              padding: 6px 20px;
+              padding: 4px 12px;
               margin-right: 6px;
               border-radius: 20px;
               border: 1px solid $color-border;
+              text-decoration: none;
+              color: $color-black;
+                &:hover {
+                  border-color: $color-blue;
+                  color: $color-blue;
+                }
             }
         }
           &_name {
             width: 100%;
             padding-bottom: 10px;
             border-bottom: 1px solid $color-border;
-            p {
+            a.link {
               font-size: 18px;
               font-family: $font-family_medium;
+              color: $color-black;
             }
           }
           &_size {
@@ -150,28 +147,46 @@
             align-items: flex-start;
             justify-content: flex-start;
               .size {
-                margin-right: 48px;
+                margin-right: 24px;
                 font-size: 16px;
                   .mini {
                     font-size: 12px;
                     opacity: 0.5;
                     margin-bottom: 6px;
                   }
+                &:first-child {
+                  width: 50%;
+                }
                  &:last-child {
                    margin-right: 0;
+                   width: 50%;
                  }
               }
           }
           .place {
             .size {
               margin-right: 20px;
-              font-size: 14px;
+              font-size: 15px;
               &:last-child {
                 margin-right: 0;
               }
             }
           }
       }
+    &:hover {
+      img {
+        opacity: 0.7;
+        transition: all 0.2s;
+      }
+      .tp_info_name a.link {
+        color: $color-blue;
+      }
+      .btn_white {
+        opacity: 1;
+        transition: all 0.2s;
+        border-color: #fff;
+      }
+    }
   }
 }
 
@@ -327,6 +342,13 @@
 
 .tile_park {
   .tile_projects__item {
+    .tp_info_name {
+      .link {
+        color: $color-black;
+        text-decoration: none;
+        font-size: 18px;
+      }
+    }
     .tp_price {
       padding-top: 12px;
       width: 100%;
@@ -344,9 +366,10 @@
         }
     }
     &:hover {
-      .tp_info_name {
+      .tp_info_name .link {
         color: $color-blue;
       }
+
     }
   }
 }
@@ -440,7 +463,7 @@
       margin-bottom: 32px;
         img {
           display: block;
-          border-radius: 12px;
+          border-radius: 10px;
           margin-bottom: 12px;
           width: 100%;
         }
@@ -448,6 +471,7 @@
           font-family: $font-family_medium;
           margin-bottom: 4px;
           transition: all 0.2s;
+          font-size: 16px;
         }
         .cat_descr {
           opacity: .5;
@@ -483,7 +507,7 @@
           max-height: 220px;
           width: auto;
           display: block;
-          border-radius: 12px;
+          border-radius: 10px;
         }
         .status {
           display: none;
@@ -498,9 +522,12 @@
               align-items: center;
               justify-content: space-between;
               margin-bottom: 6px;
+              transition: all 0.2s;
                 .item_name {
                   font-size: 16px;
                   font-family: $font-family_medium;
+                  color: $color-black;
+                  text-decoration: none;
                 }
             }
           .ability {
@@ -562,6 +589,15 @@
             }
           }
         }
+      &:hover {
+        cursor: pointer;
+        .item_info {
+          &__title .item_name {
+            color: $color-blue;
+            transition: all 0.2s;
+          }
+        }
+      }
     }
 }
 
@@ -880,7 +916,7 @@
       .pcr_item {
         width: 33.3333%;
           p {
-            opacity: 0.5;
+            opacity: 0.75;
           }
         .medium {
           font-family: $font-family_medium;
@@ -888,4 +924,8 @@
         }
       }
     }
+}
+
+.page-catalog .page__item.service_page__tile {
+  padding-top: 0;
 }

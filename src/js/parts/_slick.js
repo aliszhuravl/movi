@@ -6,7 +6,7 @@ $(function() {
         cssEase:'linear',
         slidesToShow: 5,
         variableWidth: true,
-        arrows: false,
+        arrows: true,
         responsive: [
             {
                 breakpoint: 1200,
@@ -30,7 +30,7 @@ $(function() {
         cssEase:'linear',
         slidesToShow: 5,
         variableWidth: true,
-        arrows: false,
+        arrows: true,
         responsive: [
             {
                 breakpoint: 1200,

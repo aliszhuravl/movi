@@ -26,15 +26,10 @@
     .left {
       margin-right: 48px;
     }
-    .right {
-      p {
-        opacity: .6;
-        font-family: $font-family;
-      }
-    }
     p {
       font-size: 15px;
       margin-bottom: 10px;
+      opacity: .85;
     }
 }
 
@@ -43,7 +38,7 @@
     opacity: 1;
     font-family: $font-family;
       p {
-        opacity: .6;
+        opacity: .85;
       }
       .point_text {
         opacity: 1;
@@ -66,7 +61,7 @@
   max-width: 70%;
    p {
      font-size: 15px;
-     opacity: 0.8;
+     opacity: .85;
    }
 }
 

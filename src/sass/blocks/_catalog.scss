@@ -25,6 +25,9 @@
     p, a, span {
       color: $color-black;
     }
+    .right .contact .social_link span:before {
+      color: $color-black;
+    }
     .icon-loop:before {
       color: $color-black;
     }
@@ -43,7 +46,7 @@
     .left {
       p {
         font-family: $font-family;
-        opacity: .6;
+        opacity: .85;
       }
     }
   }
@@ -132,10 +135,10 @@
 
 .available {
   p {
-    color: #1CBB33;
+    color: #36A646;
   }
   span {
-    background-color: #1CBB33;
+    background-color: #36A646;
   }
 }
 

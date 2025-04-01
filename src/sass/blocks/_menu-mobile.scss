@@ -48,6 +48,24 @@
           background-color: transparent;
           border-color: #fff;
         }
+        .social {
+          &_link {
+            margin-right: 16px;
+            text-decoration: none;
+              span:before {
+                font-size: 17px;
+                color: #fff;
+              }
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+          .wechat {
+            span:before {
+              font-size: 18px;
+            }
+          }
+        }
         &_top {
           margin-bottom: 20px;
           flex-direction: column;

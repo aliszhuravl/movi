@@ -59,6 +59,14 @@
   background-color: transparent;
   border: none;
   box-shadow: none;
+  &:hover,
+  &:active,
+  &:focus
+  {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
 }
 
 .btn_white {
