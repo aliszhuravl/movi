@@ -74,6 +74,12 @@
         }
       }
       .accordion {
+        .accordion__btn {
+          &:hover {
+            color: $color-blue;
+            cursor: pointer;
+          }
+        }
         .accordion__content {
           .link {
             display: block;
@@ -135,10 +141,11 @@
 
 .available {
   p {
-    color: #36A646;
+    color: #01A619;
+    font-family: $font-family_medium;
   }
   span {
-    background-color: #36A646;
+    background-color: #01A619;
   }
 }
 

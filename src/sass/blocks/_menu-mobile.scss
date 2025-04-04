@@ -67,16 +67,20 @@
           }
         }
         &_top {
-          margin-bottom: 20px;
           flex-direction: column;
           display: flex;
           align-items: center;
           justify-content: space-between;
+          margin-bottom: 20px;
           .item_search {
             margin-left: 0;
             width: 100%;
             background-position: 96% center;
+            margin-bottom: 0;
           }
+        }
+        .sidebar_catalog__accordion {
+          margin-bottom: 40px;
         }
         .accordion__item {
           .link {
@@ -177,6 +181,10 @@
   display: none;
 }
 
+.call_mobile {
+  display: none;
+}
+
 
 @media (max-width: 1199px) {
 
@@ -184,13 +192,18 @@
     width: 50%;
   }
 
+  .call_mobile {
+    display: block;
+    margin-right: 32px;
+  }
+
   .search_mobile {
     display: block;
     width: -webkit-fill-available;
     width: -moz-available;
+    margin-right: 20px;
       .btn_transparent {
         float: right;
-        margin-right: 32px;
         span {
           font-size: 18px;
           opacity: 0.6;

@@ -16,7 +16,7 @@
 
 .header_transparent {
   position: absolute;
-  top: 12px;
+  top: 6px;
   left: 0;
   width: 100%;
 }
@@ -119,6 +119,7 @@
   position: relative;
   .dropdown__text {
     font-size: 15px;
+    height: 40px;
     a {
       display: block;
     }
@@ -132,6 +133,9 @@
       top: 5px;
       width: 8px;
       height: 8px;
+    }
+    &:after {
+      top: 15px;
     }
   }
   .dropdown__list {
@@ -167,14 +171,35 @@
 }
 
 .header_sticky {
-  background-color: $color-blue;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.03);
+  padding: 0;
   transition: all 0.2s;
-  position: fixed;
+  position: fixed !important;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
-  border-bottom-right-radius: 40px;
-  border-bottom-left-radius: 40px;
+  .header_top {
+    background-color: #fff;
+    margin-bottom: 6px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    p, a, span {
+      color: $color-black;
+    }
+    .right .contact .social_link span:before {
+      color: $color-black;
+    }
+    .icon-loop:before {
+      color: $color-black;
+    }
+    .dd img {
+      filter: invert(0.5);
+    }
+    .dd .dropdown .dropdown__text {
+      color: $color-black;
+    }
+    .dd .dropdown .dropdown__text:after {
+      border-color: $color-black;
+    }
+  }
 }

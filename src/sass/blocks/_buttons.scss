@@ -31,8 +31,8 @@
   
   &:hover,
   &:focus {
-    border-color: #156FC2;
-    background-color: #156FC2;
+    border-color: #0F5594;
+    background-color: #0F5594;
   }
   
   &:active {
@@ -74,7 +74,11 @@
   border-color: #fff;
   color: $color-black;
   transition: all 0.2s;
-    &:hover {
+  &:hover,
+  &:active,
+  &:focus
+  {
+      background-color: #fff;
       transition: all 0.2s;
     }
 }
@@ -84,6 +88,15 @@
   background-color: #fff;
   border-color: $color-blue;
   color: $color-blue;
+  &:hover,
+  &:active,
+  &:focus
+  {
+    background-color: #fff;
+    transition: all 0.2s;
+    color: $color-black;
+    border-color: $color-black;
+  }
 }
 
 .btn_light {

@@ -508,6 +508,8 @@
           width: auto;
           display: block;
           border-radius: 10px;
+          transform: scale(1);
+          transition: all 0.2s;
         }
         .status {
           display: none;
@@ -591,6 +593,10 @@
         }
       &:hover {
         cursor: pointer;
+        .item_img img {
+          transform: scale(1.02);
+          transition: all 0.2s;
+        }
         .item_info {
           &__title .item_name {
             color: $color-blue;
@@ -916,11 +922,12 @@
       .pcr_item {
         width: 33.3333%;
           p {
-            opacity: 0.75;
+            opacity: 1;
+            font-family: $font-family_medium;
           }
         .medium {
-          font-family: $font-family_medium;
-          opacity: 1;
+          font-family: $font-family;
+          opacity: 0.7;
         }
       }
     }

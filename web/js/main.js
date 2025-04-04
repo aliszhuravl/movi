@@ -92,6 +92,7 @@ $(function() {
         cssEase:'linear',
         slidesToShow: 5,
         variableWidth: true,
+        centerMode: false,
         arrows: true,
         responsive: [
             {
@@ -127,37 +128,14 @@ $(function() {
             {
                 breakpoint: 640,
                 settings: {
-                    slidesToShow: 2,
-                    centerMode: false
-                }
-            }
-        ]
-    });
-
-    $('.cat_slider').slick({
-        dots: false,
-        infinite: true,
-        cssEase:'linear',
-        slidesToShow: 4,
-        arrows: true,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
                     slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 640,
-                settings: {
-                    slidesToShow: 1
                 }
             }
         ]
     });
 
     $('.pht').slick({
-        dots: false,
+        dots: true,
         infinite: true,
         cssEase:'linear',
         slidesToShow: 4,
@@ -181,7 +159,7 @@ $(function() {
     });
 
     $('.slider-case').slick({
-        dots: false,
+        dots: true,
         infinite: true,
         cssEase:'linear',
         slidesToShow: 1,
@@ -223,6 +201,30 @@ $(function() {
         arrows: false,
         centerMode: false,
         focusOnSelect: true
+    });
+
+    $('.cat_slider').slick({
+        dots: false,
+        infinite: true,
+        cssEase: 'linear',
+        slidesToShow: 4,
+        centerMode: false,
+        speed: 300,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
 });
