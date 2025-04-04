@@ -132,3 +132,20 @@
     margin-bottom: 40px;
   }
 }
+
+.error_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 0;
+  img {
+    margin-bottom: 40px;
+  }
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
