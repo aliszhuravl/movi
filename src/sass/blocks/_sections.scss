@@ -210,6 +210,18 @@
         width: -moz-available;
         width: -webkit-fill-available;
       }
+      .input-price {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .form__item {
+          margin-bottom: 0;
+          margin-right: 12px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
     }
 }
 

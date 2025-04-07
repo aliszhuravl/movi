@@ -38,7 +38,7 @@
       &__inner {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
         height: 100%;
         .btn {
           display: flex;
@@ -49,6 +49,7 @@
           border-color: #fff;
         }
         .social {
+          margin-bottom: 32px;
           &_link {
             margin-right: 16px;
             text-decoration: none;
@@ -195,6 +196,9 @@
   .call_mobile {
     display: block;
     margin-right: 32px;
+  }
+
+  .page-catalog .call_mobile {
     filter: invert(.8);
   }
 

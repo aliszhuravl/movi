@@ -113,7 +113,7 @@ $(function() {
         asNavFor: '.slider-for',
         dots: false,
         arrows: false,
-        centerMode: false,
+        centerMode: true,
         focusOnSelect: true
     });
 

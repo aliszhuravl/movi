@@ -93,6 +93,9 @@
   visibility: visible;
   opacity: 1;
   transition: all 0.3s;
+  -webkit-box-shadow: 0 40px 300px 300px rgba(23, 61, 90, 0.3);
+  -moz-box-shadow: 0 40px 300px 300px rgba(23, 61, 90, 0.3);
+  box-shadow: 0 40px 300px 300px rgba(23, 61, 90, 0.3);
 }
 
 .qtt {

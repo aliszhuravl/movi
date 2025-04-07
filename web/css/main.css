@@ -804,8 +804,11 @@ h3 {
 .dropdown_hover .dropdown__list {
 	display: block;
 	visibility: hidden;
+	overflow: hidden;
 	transition: all .3s ease-out;
 	opacity: 0;
+	border-bottom-right-radius: 12px !important;
+	border-bottom-left-radius: 12px !important;
 }
 
 .dropdown_hover .dropdown__item {
@@ -1695,6 +1698,7 @@ h3 {
 	visibility: visible;
 	transition: all .3s;
 	opacity: 1;
+	box-shadow: 0 40px 300px 300px rgba(23, 61, 90, .3);
 }
 
 .qtt {
@@ -2214,6 +2218,21 @@ h3 {
 .section_filters .filter_item .dropdown {
 	width: -moz-available;
 	width: -webkit-fill-available;
+}
+
+.section_filters .filter_item .input-price {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.section_filters .filter_item .input-price .form__item {
+	margin-right: 12px;
+	margin-bottom: 0;
+}
+
+.section_filters .filter_item .input-price .form__item:last-child {
+	margin-right: 0;
 }
 
 .catalog_content__sort .dropdown {
@@ -3590,6 +3609,11 @@ h3 {
 
 .pht .slick-prev {
 	left: 10px;
+}
+
+.section_team .slick-next,
+.section_team .slick-prev {
+	bottom: 60%;
 }
 
 .page-catalog .page__item {
@@ -5109,7 +5133,7 @@ h3 {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
 .menu_mobile__inner .menu_body__inner .btn {
@@ -5119,6 +5143,10 @@ h3 {
 	background-color: transparent;
 	align-items: center;
 	justify-content: center;
+}
+
+.menu_mobile__inner .menu_body__inner .social {
+	margin-bottom: 32px;
 }
 
 .menu_mobile__inner .menu_body__inner .social_link {
@@ -6392,6 +6420,9 @@ h2 {
 .call_mobile {
 	display: block;
 	margin-right: 32px;
+}
+
+.page-catalog .call_mobile {
 	filter: invert(.8);
 }
 
