@@ -10,3 +10,4 @@
 //= parts/_opens.js
 //= parts/_close.js
 //= parts/_header.js
+//= parts/_fancybox.js
